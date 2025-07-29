@@ -1,12 +1,13 @@
 import axios from 'axios';
 
-const API_BASE_URL = process.env.REACT_APP_API_BASE_URL || 'https://vercel-gursha-backend-7sgmwp86v-meseretlealem8-2171s-projects.vercel.app/api';
+const API_BASE_URL = process.env.REACT_APP_API_BASE_URL;
 
 // Create axios instance with base configuration
 const api = axios.create({
     baseURL: API_BASE_URL,
     headers: {
         'Content-Type': 'application/json',
+        'Origin': 'https://vercel-gursha-frontend.vercel.app' // Manually set Origin
     },
     timeout: 10000, // 10 second timeout
 });

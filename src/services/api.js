@@ -7,7 +7,6 @@ const api = axios.create({
     baseURL: API_BASE_URL,
     headers: {
         'Content-Type': 'application/json',
-        'Origin': 'https://vercel-gursha-frontend-services.vercel.app/' // Manually set Origin
     },
     timeout: 10000, // 10 second timeout
 });
